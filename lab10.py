@@ -39,7 +39,7 @@ db['embedding'] = db['embedding'].apply(lambda x: np.frombuffer(base64.b64decode
 
 
 def main():
-    st.title('Search for similar expressions')
+    st.title('Search for similar images')
     uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg", "webp", "tiff"])
     if uploaded_file is None:
         pass
